@@ -1,0 +1,18 @@
+button {
+  @extend %button;
+  padding: .5em 1.7em;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: $backgrond-color-first;
+  color: $primary-color;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+button.button--search {
+  @extend %button;
+  padding: 1em 1em !important;
+  font-size: 18px;
+}
+
+

@@ -1,0 +1,59 @@
+.main-game-page {
+    width: 85%;    
+    height: auto;
+    margin: -50px auto 30px auto;
+}
+.game-title h1 {
+    margin: 0;
+    margin-left: 20px;
+    line-height: 1em;
+}
+.game-content {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    @extend %backgraund-secondary;
+    background-size: cover;
+    //@extend %backgraund-secondary;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.game-left-content {
+    width: 56%;
+    height: auto;
+}
+.game-left-content-video {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin-bottom: 15px;
+    padding-bottom: 12%;
+    padding-top: 25px;
+    height: 0;
+    overflow: hidden;
+}
+.game-right-content {
+    width: 42%;
+    height: auto;
+}
+.game-right-content-img img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.game-right-content-text p {
+    color: #fff;
+    text-align: justify;
+    line-height: 1.3em;
+}
+
+.video {
+    //width: 100%;
+    //height: 100%;
+    //border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+

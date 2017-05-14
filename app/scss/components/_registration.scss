@@ -1,0 +1,80 @@
+.registration-block {
+  width: 50%;
+  margin: 0 auto 2rem;
+  padding: 10px 0 15px;
+  text-align: center;
+  font: $base-font-family;
+  color: $primary-color;
+  @extend %backgraund-secondary;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  fieldset {
+    max-width: 50%;
+    margin: 0 auto;
+    border: none;
+
+    input {
+      width: 100%;
+      margin-bottom: 5px;
+      border-color: transparent transparent $primary-color transparent;
+      background: transparent;
+
+      &:focus {
+        outline: none;
+        border-bottom-color: $primary-color-focus;
+      }
+
+    }
+
+    input[type="checkbox"] {
+      width: 13px;
+    }
+
+    input + label {
+      margin-left: .5em;
+    }
+
+    legend {
+      font-size: $heading-font-size;
+      border: none;
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+
+
+.game-checker {
+  margin: 0 auto;
+  padding: 1em;
+  //border: $border-style;
+  border-color: transparent transparent $primary-color transparent;
+
+  & li {
+    color: $text-color;
+    text-align: left;
+
+  }
+}
+
+.input-option {
+  background: transparent;
+  cursor: pointer;
+
+  option {
+    color: $text-color-dark;
+    cursor: pointer;
+  }
+}
+
+.registration-block button {
+  margin: 15px 0;
+  padding: 10px;
+}

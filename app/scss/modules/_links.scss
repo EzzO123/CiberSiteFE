@@ -1,0 +1,23 @@
+a {
+  color: $link-color;
+  cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+  &:focus {
+       outline-color: $primary-color;
+     }
+
+  transition: .2s ease;
+}
+
+
+.link--social {
+  display: block;
+  color: $primary-color;
+  background: #ead68e;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}

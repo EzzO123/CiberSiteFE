@@ -1,0 +1,129 @@
+.chat {
+  height: 72%;
+  border: $border-style; // solid 1px black;
+  border-radius:  5px;
+  padding: 5px;
+  padding-left: 0;
+}
+
+.chat-container {
+  //position: relative;
+  height: 100%;
+}
+
+.chat__heading {
+  margin: 5px;
+  padding: 0;
+  font-size: 1rem;
+  text-transform: uppercase;
+  //margin-left: 5px;
+}
+
+
+.chat__messenge {
+  position: relative;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+.chat__dialog {
+  position: relative;
+
+  width: 100%;
+  height: calc(100% - 150px);
+  //max-height: 280px;
+  margin-top: 10px;
+  overflow-y: scroll;
+  @extend %scroll-track;
+}
+
+.chat__messenge {
+  margin-right: 5px;
+  background: $backgrond-color-divide;
+  @include clearfix;
+
+}
+
+.chat__messenge-content {
+  margin-left: 15px;
+  font-size: 1.3rem;
+  margin-top: 5px
+}
+
+.chat__user-name, .chat__time {
+  display: block;
+}
+
+.chat__user-name {
+  font-size: $fixed-font-size;
+}
+
+.chat__time {
+  font-size: $fixed-font-size - 5;
+}
+
+.chat__send-messenge {
+  position: absolute;
+  bottom: 20px;
+  margin-top: 10px;
+}
+
+
+
+.chat__input-text {
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: 20px;
+  //margin-top: 30px;
+  margin-bottom: 10px;
+  color: $text-color-dark;
+  word-wrap: break-word;
+  padding-top: 6px;
+  font-size: $small-font-size;
+  word-wrap: break-word;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: solid 1px #e4e6e9;
+  background: rgb(255, 255, 255);
+  resize: none;
+  @extend %scroll-track;
+
+  &:focus {
+    outline: 0;
+  }
+
+}
+
+textarea {
+  &::-webkit-input-placeholder {color:$placeholder-color;}
+  &::-moz-placeholder          {color:$placeholder-color;}/* Firefox 19+ */
+  &:-moz-placeholder           {color:$placeholder-color;}/* Firefox 18- */
+  &:-ms-input-placeholder      {color:$placeholder-color;}
+}
+
+.chat__button {
+  @extend %align-center-block;
+  @extend %button;
+
+  font-size: $small-font-size;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.chat_ban-actions {
+  &::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("../img/ban-ico.png");
+    background-size: cover;
+  }
+  &:hover {
+    transform: scale(1.1);
+  }
+
+}

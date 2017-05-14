@@ -1,0 +1,50 @@
+.videos {
+  height: 100%;
+  @extend %backgraund-secondary;
+
+  h2 {
+    margin-top: 0;
+  }
+
+}
+
+
+.videos__wrap {
+  padding: 0 1em;
+  padding-bottom: 1em;
+}
+
+
+.videos__list {
+  @extend .streams__list;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.videos__item {
+  @extend .streams__item;
+}
+
+.videos__preview {
+  @extend .streams__preview;
+  //float: left;
+  //width: 40%;
+  //@extend %responsive_16-9;
+}
+
+.videos__name {
+  @extend .streams__name;
+  //display: block;
+  //font-size: 1em;
+  //padding: .3em 1em;
+  //margin-bottom: 1em;
+}
+
+.videos__data {
+  @extend .streams__data;
+  //display: block;
+  //font-size: 1em;
+  //padding: .3em 1em;
+}
+
+

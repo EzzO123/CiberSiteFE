@@ -1,0 +1,246 @@
+.header {
+  position: relative;
+  margin: 0 auto 50px;
+  @extend %backgraund-secondary;
+
+  .row {
+    margin: 0 !important;
+    [class*="col"] {
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+    }
+  }
+
+  button.navbar-toggle {
+    width: 40px;
+    height: 50px;
+    background: url("../img/gamburger.svg") no-repeat;
+    background-size: contain;
+  }
+
+}
+
+.top-nav {
+  color: $primary-color;
+}
+
+.navbar-brand {
+  display: block;
+  padding: .7em .7em;
+  a {
+    display: block;
+    text-align: center;
+  }
+  img{
+    width: 100px;
+  }
+}
+
+.navbar-toggler-right {
+  position: absolute;
+  right: 1rem;
+}
+
+.top-nav__global {
+  a {
+    color: inherit;
+    &:hover {
+      color: $link-color;
+    }
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 8px;
+    right: 7px;
+    background: url(../img/global.png);
+    background-size: cover;
+  }
+
+}
+
+.create-news {
+  @extend .account-option;
+  margin-right: 5px;
+}
+
+.account-option {
+  float: right;
+}
+
+
+.account-option__account-name {
+  cursor: pointer;
+  > a {
+    display: inline-block;
+    padding: 1em 0;
+    color: inherit;
+    &:hover {
+      color: $link-color;
+    }
+  }
+}
+
+.account-option__account-name:hover .account-menu {
+}
+
+.account-option__account-exit {
+  @extend .account-option__account-name;
+}
+
+.login {
+  @extend .account-option__account-name;
+  position: relative;
+  display: inline-block;
+  z-index: 10;
+
+  &:hover .account-option__actions-list  {
+    //display: block;
+  }
+}
+
+.account-option__actions-list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background: $backgrond-color-divide;
+}
+
+.account-option__item {
+
+}
+
+.account-option__link {
+  display: block;
+  padding: 1em 1em 1em .5em;
+
+}
+
+
+.registration {
+  @extend .account-option__account-name;
+}
+
+
+.account-menu {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 101%;
+  left: 0;
+  z-index: 99;
+}
+
+.account-menu__item {
+  width: 100%;
+  @extend .game-menu__item;
+  padding: 0;
+  margin-top: 5px;
+  font-size: $small-font-size;
+}
+
+ .account-menu__link {
+  @extend .game-menu__link;
+  padding: 0 !important;
+
+}
+
+.l-navigation {
+  width: 100%;
+}
+
+.navigation {
+  text-align: center;
+  margin-bottom: -3px;
+
+  & ::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+.nav__game-item {
+  position: relative;
+  display: inline-block;
+  width: 21%;
+  z-index: 1000;
+
+ // @include border-style($border-style, $border-radius);
+  &:hover  {
+    cursor: pointer;
+  }
+
+  &:hover .nav__game-menu {
+    display: block;
+  }
+
+  img {
+    max-width: 100%;
+    @include border-style($border-style, $border-radius);
+  }
+
+}
+
+
+.game-menu__link {
+  display: block;
+  text-align: center;
+  padding: 16px;
+}
+
+.game-menu__item {
+  @extend %backgraund-secondary;
+  @include border-style($border-style, $border-radius);
+  margin-bottom: 2px;
+  transition: all cubic-bezier(.62,.28,.23,.99) 0.2s;
+
+  &:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: rgb(27, 26, 25);
+  }
+}
+
+.logo__link {
+  display: block;
+  width: 100%;
+  margin: -80px auto 0 auto;
+  height: 330px;
+  background-image: url(../img/logo2.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.nav-games {
+  //width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+  @extend %backgraund-secondary;
+}
+
+.nav-games__item {
+  align-items: center;
+  //width: 24%;
+  &:hover {
+    box-shadow: inset 0 -3px $border-color-button;
+  }
+  transition: all .2s;
+}
+
+.nav-games__link {
+  display: block;
+  width: 100%;
+  padding: 2em 3em;
+  text-align: center;
+  &:hover {
+    color: $text-color-lite;
+  }
+}

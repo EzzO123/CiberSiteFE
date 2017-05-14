@@ -1,0 +1,49 @@
+.matches {
+  padding-bottom: 15px;
+
+  @extend %backgraund-secondary;
+}
+
+.matches__wrap {
+  padding: 0 10px;
+}
+
+.matches__table {
+  max-height: 500px;
+  //overflow-y: scroll;
+  //padding-right: 1em;
+  @extend %scroll-track;
+  table {
+    width: 100%;
+    font-size: .8em;
+  }
+
+  tr.table__title {
+    color: $text-color;
+    //background: transparent;
+    border: 2px solid $heading-color;
+  }
+
+  th,td {
+    padding: .5em;
+    text-align: center;
+
+    img {
+      width: 50%;
+      height: auto;
+    }
+  }
+
+  td, th {
+    border-right: 1px solid $table-border-color;
+    &:last-child {
+      border: none;
+    }
+  }
+
+  tr:nth-last-of-type(2n) {
+    color: $text-color-dark;
+    background: $table-background-color;
+  }
+}
+

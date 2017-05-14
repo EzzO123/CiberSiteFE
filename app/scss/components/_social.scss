@@ -1,0 +1,46 @@
+.social {
+  .link-item {
+
+    &:hover {
+      color: $link-hover-color;
+    }
+
+  }
+  .google {
+    background: url(../img/social-Google.png);
+    background-size: contain;
+  }
+  .youtube {
+    background: url(../img/social-YouTube.png);
+    background-size: contain;
+  }
+  .tumblr {
+    background: url(../img/social-Tumblr.png);
+    background-size: contain;
+  }
+  .facebook {
+    background: url(../img/social-Facebook.png);
+    background-size: contain;
+  }
+  .regisrtVK{
+    background: url(../img/registrationVK.png);
+    background-size: contain;
+    height: 40px;
+    width: 40px;
+    background-repeat: no-repeat;
+  }
+  .registrFace{
+    background: url(../img/registrationFacebook.png);
+    background-size: contain;
+    height: 40px;
+    width: 40px;
+    background-repeat: no-repeat;
+  }
+  .registrGoogle{
+    background: url(../img/registration-Google.png);
+    background-size: contain;
+    height: 40px;
+    width: 40px;
+    background-repeat: no-repeat;
+  }
+}

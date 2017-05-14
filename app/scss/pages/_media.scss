@@ -1,0 +1,183 @@
+@media screen and (max-width: $screen-xs){
+  .news__item {
+    //width: 100% !important;
+  }
+}
+
+@media screen and (max-width: $screen-sm){
+  .news__item {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: $screen-md - 1){
+  .streams__list {
+    display: none !important;
+  }
+
+  .streams__list {
+    display: none !important;
+  }
+
+  .videos__list {
+    width: 100%;
+    display: block !important;
+
+  }
+  .videos__item {
+    width: 45% !important;
+    //padding: 2em;
+    margin-right: 2em;
+    float: left !important;
+  }
+  .chat--aside {
+    display: none!important;
+  }
+}
+
+
+@media screen and (min-width: $screen-md){
+
+  .flex-center {
+    //height: 100vh !important;
+  }
+
+  .menu-game > .row:first-child {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: $screen-xs){
+
+  .news__preview-text {
+    max-height: 80px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .menu-game__link {
+    font-size: .7em !important;
+  }
+
+  .account-option, .create-news,.top-nav__global {
+    float: none !important;
+    text-align: center !important;
+  }
+
+  .footer .tech-support {
+    font-size: .8em !important;
+  }
+
+  .social {
+    float: none !important;
+    text-align: center !important;
+  }
+
+  .registration-block, .login-block  {
+    width: auto !important;
+    margin: 0 auto 2rem !important;
+  }
+
+  .registration-form fieldset {
+    max-width: 100% !important;
+  }
+
+  .login-input {
+    width: 90% !important;
+  }
+}
+
+@media screen and (min-width: $screen-md){
+
+  .row {
+    margin-bottom: 30px !important;
+  }
+
+  .row .row {
+    margin-bottom: 0 !important;
+  }
+
+}
+
+@media screen and (max-width: $screen-md){
+
+  .header {
+    .row > [class*="col-"] {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  .row > [class*="col-"] {
+    margin-bottom: 2em !important;
+  }
+
+  .row {
+    margin-bottom: 0 !important;
+  }
+
+  .news__container {
+    width: 100% !important;
+    margin: 0 !important;
+
+  }
+  .news__item {
+    width: 100% !important;
+    &:not(:last-child) {
+      margin-bottom: 1em !important;
+      border-bottom: $border-style-opocity-low;
+    }
+
+  }
+
+  .news__preview-text {
+    max-height: 70px !important;
+  }
+
+
+  .news__arrow-l, .news__arrow-r {
+    display: none !important;
+  }
+
+  .registration-block, .login-block {
+    width: 90% !important;
+    margin: 0 auto 2rem !important;
+  }
+}
+
+@media screen and (min-width: 1300px ){
+  .personal-data,
+  .registration-block,
+  .login-block {
+    margin-bottom: 50vh !important;
+  }
+
+}
+
+@media screen and (min-width: $screen-md) {
+  .login-block {
+    margin-bottom: 50vh !important;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .news__item {
+    width: 100% !important;
+    margin-bottom: 30px !important;
+    border-bottom: $border-style-opocity-low;
+  }
+}
+
+
+@media screen and (max-width: $screen-sm){
+
+  .navbar-brand {
+    float: none !important;
+  }
+  .account-option {
+    text-align: center !important;
+    float: none !important;
+    line-height: inherit !important;
+  }
+
+
+}
+

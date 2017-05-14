@@ -1,0 +1,44 @@
+.footer {
+  position: relative;
+  padding: 0 10px;
+  margin: 0 auto;
+  color: $primary-color;
+  @extend %backgraund-secondary;
+  @include clearfix;
+}
+
+.tech-support {
+  line-height: 30px;
+}
+
+.tech-support__item {
+  .link-item {
+    padding: 5px 10px;
+      color: inherit;
+      &:hover {
+        color: $link-color;
+    }
+  }
+}
+
+.social__item {
+  padding-top: 8px;
+}
+
+.copyright {
+  display: block;
+  padding: 0 10px;
+  line-height: 40px;
+}
+
+.footer .tech-support {
+  float: left;
+}
+
+.footer .copyright {
+  float: right;
+}
+
+.footer .social {
+  float: right;
+}
